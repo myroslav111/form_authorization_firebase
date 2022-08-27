@@ -12,7 +12,7 @@ function SignUp() {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
-        console.log(user);
+        // console.log(user);
         dispatch(
           setUser({
             email: user.email,
@@ -22,7 +22,7 @@ function SignUp() {
         );
         navigate('/home');
       })
-      .cath(console.error);
+      .cath(() => alert('Invalid user'));
   };
 
   return <Form title="register" handleClick={handleRegister} />;
