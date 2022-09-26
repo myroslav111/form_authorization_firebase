@@ -4,10 +4,6 @@ on:
   push:
     branches: [main]
 
-    env:
-    REACT_APP_FIREBASE_API_KEY: AIzaSyB_Xiu7kQjscqKcaNNxQQEdS_zboEd3vxM
-    REACT_APP_FIREBASE_AUTH_DOMAIN: test-firebase-myroslav111.firebaseapp.com
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
