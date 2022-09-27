@@ -7,7 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const dispatch = useDispatch();
-  console.log(process.env);
+
+  // console.log(process.env);
   let navigate = useNavigate();
   const handleLogin = (email, password) => {
     const auth = getAuth();
