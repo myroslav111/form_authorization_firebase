@@ -24,7 +24,7 @@ function Login() {
         );
         navigate('/home');
       })
-      .cath(() => alert('Invalid user'));
+      .catch(() => alert('Invalid user'));
   };
   return <Form title="sign in" handleClick={handleLogin} />;
 }
